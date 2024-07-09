@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 76, in setup_complete
+    task.get("fn")(task.get("args"))
+  File "apps/erpnext/erpnext/setup/setup_wizard/setup_wizard.py", line 62, in setup_defaults
+    fixtures.install_defaults(frappe._dict(args))
+  File "apps/erpnext/erpnext/setup/setup_wizard/operations/install_fixtures.py", line 791, in install_defaults
+    set_active_domains(args)
+  File "apps/erpnext/erpnext/setup/setup_wizard/operations/install_fixtures.py", line 816, in set_active_domains
+    frappe.get_single("Domain Settings").set_active_domains(args.get("domains"))
+  File "apps/frappe/frappe/core/doctype/domain_settings/domain_settings.py", line 21, in set_active_domains
+    self.save()
+  File "apps/frappe/frappe/model/document.py", line 312, in save
+    return self._save(*args, **kwargs)
+  File "apps/frappe/frappe/model/document.py", line 366, in _save
+    self.run_post_save_methods()
+  File "apps/frappe/frappe/model/document.py", line 1087, in run_post_save_methods
+    self.run_method("on_update")
+  File "apps/frappe/frappe/model/document.py", line 943, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "apps/frappe/frappe/model/document.py", line 1264, in composer
+    return composed(self, method, *args, **kwargs)
+  File "apps/frappe/frappe/model/document.py", line 1246, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "apps/frappe/frappe/model/document.py", line 940, in fn
+    return method_object(*args, **kwargs)
+  File "apps/frappe/frappe/core/doctype/domain_settings/domain_settings.py", line 29, in on_update
+    domain.setup_domain()
+  File "apps/frappe/frappe/core/doctype/domain/domain.py", line 34, in setup_domain
+    frappe.get_attr(self.data.on_setup)()
+  File "apps/erpnext/erpnext/healthcare/setup.py", line 16, in setup_healthcare
+    create_healthcare_item_groups()
+  File "apps/erpnext/erpnext/healthcare/setup.py", line 484, in create_healthcare_item_groups
+    insert_record(records)
+  File "apps/erpnext/erpnext/setup/utils.py", line 162, in insert_record
+    doc.insert(ignore_permissions=True)
+  File "apps/frappe/frappe/model/document.py", line 264, in insert
+    self._validate()
+  File "apps/frappe/frappe/model/document.py", line 540, in _validate
+    self._validate_mandatory()
+  File "apps/frappe/frappe/model/document.py", line 891, in _validate_mandatory
+    raise frappe.MandatoryError(
+frappe.exceptions.MandatoryError: [Item Group, Laboratory]: short_name
+{"language": "English (United States)", "country": "Kenya", "timezone": "Africa/Nairobi", "currency": "KES", "full_name": "Robert", "email": "Edwarobert6@gmail.com", "password": "JHS30090", "domains": ["Healthcare"], "company_name": "Wema Clinics", "company_abbr": "WC", "company_tagline": "Healthcare", "bank_account": "Baclays", "chart_of_accounts": "Standard", "fy_start_date": "2023-01-01", "fy_end_date": "2023-12-31", "name": "Edwarobert6@gmail.com"}

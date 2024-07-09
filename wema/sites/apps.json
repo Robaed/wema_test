@@ -1,0 +1,91 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "13.51.0"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "5157f5dd0e05e1d908aec6bc067d479592efe161",
+            "branch": "version-13"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "13.49.4"
+    },
+    "gch_messaging": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "9c6a28149fc2413680631d58c58956446bf57600",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "gch_queue": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "136e669c785cad57ebaa00fe79779a88b10000a4",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "gch_theme": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "3a1b90017d6b8e3e930736787ae0eaf4e2ec738f",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    },
+    "gch_middleware": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "060d953db20ebf425cdebba346d7bc334bf97806",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "0.0.1"
+    },
+    "gch_sentry": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "fd1450e3899cc31947bd454e795ca09d90fa41c1",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 8,
+        "version": "0.0.1"
+    },
+    "gch_custom": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "304978a9c53cfbb712a1032ce015360defb56a93",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 8,
+        "version": "0.0.1"
+    },
+    "gch_inpatient": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f212404e128bdd29d3c65155fafae5725ed79908",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 9,
+        "version": "0.0.1"
+    }
+}

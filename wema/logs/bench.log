@@ -1,0 +1,1265 @@
+2023-03-09 13:27:37,267 DEBUG cd wema && python3 -m venv env
+2023-03-09 13:27:42,006 DEBUG cd wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade pip
+2023-03-09 13:27:45,046 DEBUG cd wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet wheel
+2023-03-09 13:27:48,594 LOG Getting frappe
+2023-03-09 13:27:48,594 DEBUG cd wema/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-03-09 13:27:59,452 LOG Installing frappe
+2023-03-09 13:27:59,453 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/frappe 
+2023-03-09 13:28:54,322 DEBUG cd /home/redward/Desktop/playground/wema/wema/apps/frappe && yarn install
+2023-03-09 13:29:20,412 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:29:20,413 DEBUG cd wema && bench build
+2023-03-09 13:29:20,579 INFO /home/redward/.local/bin/bench build
+2023-03-09 13:30:42,776 LOG setting up backups
+2023-03-09 13:30:42,784 LOG backups were set up
+2023-03-09 13:30:42,784 INFO Bench wema initialized
+2023-03-09 13:31:07,928 INFO /home/redward/.local/bin/bench version
+2023-03-09 13:34:28,780 INFO /home/redward/.local/bin/bench new-site wema
+2023-03-09 13:36:48,636 INFO /home/redward/.local/bin/bench get-app --branch version-13 erpnext
+2023-03-09 13:36:49,893 LOG Getting erpnext
+2023-03-09 13:36:49,893 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2023-03-09 13:37:01,523 LOG Installing erpnext
+2023-03-09 13:37:01,749 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/erpnext 
+2023-03-09 13:37:28,217 DEBUG cd /home/redward/Desktop/playground/wema/wema/apps/erpnext && yarn install
+2023-03-09 13:37:29,400 DEBUG bench build --app erpnext
+2023-03-09 13:37:29,567 INFO /home/redward/.local/bin/bench build --app erpnext
+2023-03-09 13:37:55,060 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:38:47,486 INFO /home/redward/.local/bin/bench version
+2023-03-09 13:39:48,945 INFO /home/redward/.local/bin/bench --site wema install-app erpnext
+2023-03-09 13:44:32,740 INFO /home/redward/.local/bin/bench get-app gch_messaging gch_messaging https://github.com/Gertrude-s-Children-s-Hospital/gch-messaging
+2023-03-09 13:44:32,751 LOG Getting gch-messaging
+2023-03-09 13:44:32,751 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-messaging  --depth 1 --origin upstream
+2023-03-09 13:44:35,609 LOG Installing gch_messaging
+2023-03-09 13:44:35,912 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_messaging 
+2023-03-09 13:44:44,199 DEBUG bench build --app gch_messaging
+2023-03-09 13:44:44,345 INFO /home/redward/.local/bin/bench build --app gch_messaging
+2023-03-09 13:44:47,188 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:46:28,001 INFO /home/redward/.local/bin/bench --site wema install-app gch_messaging
+2023-03-09 13:47:12,331 INFO /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/gch-custom
+2023-03-09 13:47:12,340 LOG Getting gch-custom
+2023-03-09 13:47:12,341 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-custom  --depth 1 --origin upstream
+2023-03-09 13:47:17,271 LOG Installing gch_custom
+2023-03-09 13:47:17,563 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_custom 
+2023-03-09 13:47:21,165 DEBUG bench build --app gch_custom
+2023-03-09 13:47:21,308 INFO /home/redward/.local/bin/bench build --app gch_custom
+2023-03-09 13:47:24,124 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:47:41,557 INFO /home/redward/.local/bin/bench --site wema install-app gch_custom
+2023-03-09 13:51:25,250 INFO /home/redward/.local/bin/bench get-app gch_queue https://github.com/Gertrude-s-Children-s-Hospital/gch-queue
+2023-03-09 13:51:25,261 LOG Getting gch-queue
+2023-03-09 13:51:25,261 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-queue  --depth 1 --origin upstream
+2023-03-09 13:51:27,624 LOG Installing gch_queue
+2023-03-09 13:51:27,989 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_queue 
+2023-03-09 13:51:30,986 DEBUG bench build --app gch_queue
+2023-03-09 13:51:31,161 INFO /home/redward/.local/bin/bench build --app gch_queue
+2023-03-09 13:51:34,351 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:52:08,530 INFO /home/redward/.local/bin/bench --site wema install-app gch_queue
+2023-03-09 13:53:19,851 INFO /home/redward/.local/bin/bench --site wema install-app gch_custom
+2023-03-09 13:53:49,720 INFO /home/redward/.local/bin/bench get-app gch_queue https://github.com/Gertrude-s-Children-s-Hospital/gch-theme
+2023-03-09 13:53:49,730 LOG Getting gch-theme
+2023-03-09 13:53:49,730 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-theme  --depth 1 --origin upstream
+2023-03-09 13:53:52,943 LOG Installing gch_theme
+2023-03-09 13:53:53,194 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_theme 
+2023-03-09 13:53:55,330 DEBUG bench build --app gch_theme
+2023-03-09 13:53:55,454 INFO /home/redward/.local/bin/bench build --app gch_theme
+2023-03-09 13:53:57,789 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 13:54:13,999 INFO /home/redward/.local/bin/bench --site wema install-app gch_theme
+2023-03-09 13:55:06,051 INFO /home/redward/.local/bin/bench start
+2023-03-09 13:55:06,562 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 13:55:06,566 INFO /home/redward/.local/bin/bench watch
+2023-03-09 13:55:06,638 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 13:55:06,649 INFO /home/redward/.local/bin/bench worker
+2023-03-09 14:03:12,784 INFO /home/redward/.local/bin/bench start
+2023-03-09 14:03:13,198 INFO /home/redward/.local/bin/bench watch
+2023-03-09 14:03:13,206 INFO /home/redward/.local/bin/bench worker
+2023-03-09 14:03:13,259 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 14:03:13,271 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 14:13:46,085 INFO /home/redward/.local/bin/bench --site wema add-to-hostsh
+2023-03-09 14:17:00,412 INFO /home/redward/.local/bin/bench --site wema add-to-hosts
+2023-03-09 14:24:01,806 INFO /home/redward/.local/bin/bench version
+2023-03-09 14:41:44,447 INFO /home/redward/.local/bin/bench migrate
+2023-03-09 14:41:52,186 INFO /home/redward/.local/bin/bench ls
+2023-03-09 14:42:02,469 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-03-09 14:45:02,279 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-03-09 14:48:11,424 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-03-09 14:58:40,770 INFO /home/redward/.local/bin/bench get-app gch_middleware https://github.com/Gertrude-s-Children-s-Hospital/gch_middleware
+2023-03-09 14:58:40,784 LOG Getting gch_middleware
+2023-03-09 14:58:40,784 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch_middleware  --depth 1 --origin upstream
+2023-03-09 14:58:43,660 LOG Installing gch_middleware
+2023-03-09 14:58:43,974 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_middleware 
+2023-03-09 14:59:01,265 DEBUG bench build --app gch_middleware
+2023-03-09 14:59:01,449 INFO /home/redward/.local/bin/bench build --app gch_middleware
+2023-03-09 14:59:05,229 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 15:01:48,621 INFO /home/redward/.local/bin/bench --site wema install-app gch_middleware
+2023-03-09 15:02:20,217 INFO /home/redward/.local/bin/bench start
+2023-03-09 15:02:20,669 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 15:02:20,672 INFO /home/redward/.local/bin/bench worker
+2023-03-09 15:02:20,709 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 15:02:20,734 INFO /home/redward/.local/bin/bench watch
+2023-03-09 15:55:29,357 INFO /home/redward/.local/bin/bench set-config developer_mode 1
+2023-03-09 15:57:43,806 INFO /home/redward/.local/bin/bench set-config developer_mode 1
+2023-03-09 15:57:48,580 INFO /home/redward/.local/bin/bench start
+2023-03-09 15:57:48,894 INFO /home/redward/.local/bin/bench watch
+2023-03-09 15:57:48,895 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 15:57:48,934 INFO /home/redward/.local/bin/bench worker
+2023-03-09 15:57:48,936 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 16:01:26,411 INFO /home/redward/.local/bin/bench restart
+2023-03-09 16:01:26,419 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-09 16:01:34,877 INFO /home/redward/.local/bin/bench start
+2023-03-09 16:01:35,143 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 16:01:35,146 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 16:01:35,171 INFO /home/redward/.local/bin/bench watch
+2023-03-09 16:01:35,173 INFO /home/redward/.local/bin/bench worker
+2023-03-09 17:35:26,076 INFO /home/redward/.local/bin/bench start
+2023-03-09 17:35:26,515 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-09 17:35:26,540 INFO /home/redward/.local/bin/bench worker
+2023-03-09 17:35:26,555 INFO /home/redward/.local/bin/bench schedule
+2023-03-09 17:35:26,556 INFO /home/redward/.local/bin/bench watch
+2023-03-09 18:00:01,770 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-10 00:00:02,481 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-12 18:00:02,547 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-13 12:00:01,912 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-13 13:03:46,234 INFO /home/redward/.local/bin/bench start
+2023-03-13 13:03:46,858 INFO /home/redward/.local/bin/bench watch
+2023-03-13 13:03:46,895 INFO /home/redward/.local/bin/bench worker
+2023-03-13 13:03:46,908 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-13 13:03:46,926 INFO /home/redward/.local/bin/bench schedule
+2023-03-13 16:17:51,508 INFO /home/redward/.local/bin/bench export-fixtures
+2023-03-13 16:18:09,510 INFO /home/redward/.local/bin/bench export-fixtures --site wema
+2023-03-13 16:18:25,988 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-13 16:52:24,482 INFO /home/redward/.local/bin/bench get-app gch_sentry gch_messaging https://github.com/Gertrude-s-Children-s-Hospital/gch-sentry
+2023-03-13 16:52:24,526 LOG Getting gch-sentry
+2023-03-13 16:52:24,526 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-sentry  --depth 1 --origin upstream
+2023-03-13 16:52:41,992 LOG Installing gch_sentry
+2023-03-13 16:52:44,879 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_sentry 
+2023-03-13 16:52:50,559 DEBUG cd /home/redward/Desktop/playground/wema/wema/apps/gch_sentry && yarn install
+2023-03-13 16:53:05,847 DEBUG bench build --app gch_sentry
+2023-03-13 16:53:05,960 INFO /home/redward/.local/bin/bench build --app gch_sentry
+2023-03-13 16:53:13,019 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-03-13 16:54:11,277 INFO /home/redward/.local/bin/bench --site wema install-app gch_sentry
+2023-03-13 16:54:37,657 INFO /home/redward/.local/bin/bench start
+2023-03-13 16:54:38,086 INFO /home/redward/.local/bin/bench schedule
+2023-03-13 16:54:38,090 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-13 16:54:38,120 INFO /home/redward/.local/bin/bench watch
+2023-03-13 16:54:38,122 INFO /home/redward/.local/bin/bench worker
+2023-03-13 18:00:02,355 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-14 00:00:01,129 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-14 06:00:01,649 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-14 07:41:42,766 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-14 07:50:22,927 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-14 12:00:03,157 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-15 04:47:09,239 INFO /home/redward/.local/bin/bench start
+2023-03-15 04:47:09,709 INFO /home/redward/.local/bin/bench watch
+2023-03-15 04:47:09,709 INFO /home/redward/.local/bin/bench schedule
+2023-03-15 04:47:09,709 INFO /home/redward/.local/bin/bench worker
+2023-03-15 04:47:09,709 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-15 06:00:02,025 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-15 12:00:02,306 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-16 22:44:08,635 INFO /home/redward/.local/bin/bench start
+2023-03-16 22:44:09,331 INFO /home/redward/.local/bin/bench watch
+2023-03-16 22:44:09,331 INFO /home/redward/.local/bin/bench worker
+2023-03-16 22:44:09,331 INFO /home/redward/.local/bin/bench schedule
+2023-03-16 22:44:09,335 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-17 00:00:01,528 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-17 08:55:38,065 INFO /home/redward/.local/bin/bench start
+2023-03-17 08:55:38,826 INFO /home/redward/.local/bin/bench schedule
+2023-03-17 08:55:38,826 INFO /home/redward/.local/bin/bench worker
+2023-03-17 08:55:38,829 INFO /home/redward/.local/bin/bench watch
+2023-03-17 08:55:38,833 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-17 09:02:49,571 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-17 09:26:51,659 INFO /home/redward/.local/bin/bench start
+2023-03-17 09:26:52,641 INFO /home/redward/.local/bin/bench watch
+2023-03-17 09:26:52,641 INFO /home/redward/.local/bin/bench schedule
+2023-03-17 09:26:52,641 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-17 09:26:52,641 INFO /home/redward/.local/bin/bench worker
+2023-03-17 12:00:02,309 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-20 08:46:58,940 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-20 09:02:17,842 INFO /home/redward/.local/bin/bench start
+2023-03-20 09:02:18,299 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-20 09:02:18,301 INFO /home/redward/.local/bin/bench worker
+2023-03-20 09:02:18,330 INFO /home/redward/.local/bin/bench watch
+2023-03-20 09:02:18,330 INFO /home/redward/.local/bin/bench schedule
+2023-03-20 12:00:02,083 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-20 18:00:01,773 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-21 06:00:02,031 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-21 18:00:01,940 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-22 12:00:01,298 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-22 18:00:01,818 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-23 12:00:01,694 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-23 18:00:01,707 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-24 00:00:02,357 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-24 06:00:01,823 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-24 08:29:14,786 INFO /home/redward/.local/bin/bench start
+2023-03-24 08:29:15,383 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-24 08:29:15,383 INFO /home/redward/.local/bin/bench worker
+2023-03-24 08:29:15,406 INFO /home/redward/.local/bin/bench watch
+2023-03-24 08:29:15,411 INFO /home/redward/.local/bin/bench schedule
+2023-03-24 10:58:11,277 INFO /home/redward/.local/bin/bench version
+2023-03-27 09:53:17,155 INFO /home/redward/.local/bin/bench start
+2023-03-27 09:53:19,542 INFO /home/redward/.local/bin/bench worker
+2023-03-27 09:53:19,543 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-27 09:53:19,543 INFO /home/redward/.local/bin/bench schedule
+2023-03-27 09:53:19,543 INFO /home/redward/.local/bin/bench watch
+2023-03-27 10:18:54,707 INFO /home/redward/.local/bin/bench export-fixtures
+2023-03-27 10:19:08,171 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-03-27 15:27:05,191 INFO /home/redward/.local/bin/bench start
+2023-03-27 15:27:05,740 INFO /home/redward/.local/bin/bench schedule
+2023-03-27 15:27:05,740 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-03-27 15:27:05,741 INFO /home/redward/.local/bin/bench worker
+2023-03-27 15:27:05,741 INFO /home/redward/.local/bin/bench watch
+2023-03-28 12:00:01,638 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-28 18:00:02,731 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-29 00:00:04,489 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-29 06:00:01,988 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-29 12:00:02,480 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-30 00:00:02,131 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-30 12:00:01,875 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-30 18:02:50,616 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-03-31 18:00:02,670 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-01 18:00:01,523 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-03 12:00:02,330 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-04 00:00:04,342 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-05 12:00:02,248 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-06 00:00:02,447 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-06 06:00:02,134 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-06 09:27:22,442 INFO /home/redward/.local/bin/bench start
+2023-04-06 09:39:19,620 INFO /home/redward/.local/bin/bench migrate
+2023-04-06 09:39:33,368 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-04-06 09:42:16,418 INFO /home/redward/.local/bin/bench start
+2023-04-06 09:42:16,844 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-06 09:42:16,852 INFO /home/redward/.local/bin/bench watch
+2023-04-06 09:42:16,858 INFO /home/redward/.local/bin/bench worker
+2023-04-06 09:42:16,861 INFO /home/redward/.local/bin/bench schedule
+2023-04-06 09:47:03,392 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-04-06 09:54:30,211 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-04-06 09:58:40,961 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-04-06 10:08:27,136 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-04-06 12:00:02,394 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-06 12:16:41,176 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-04-11 12:00:02,393 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-11 18:00:02,182 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-12 18:00:01,861 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-14 00:00:02,838 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-14 06:00:01,365 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-14 18:00:01,694 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-15 00:00:03,414 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-15 06:00:02,071 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-15 12:00:01,757 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-16 12:00:01,375 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-16 18:00:02,287 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-17 00:00:02,989 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-17 06:00:02,153 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-17 13:24:35,100 INFO /home/redward/.local/bin/bench start
+2023-04-17 13:24:49,858 INFO /home/redward/.local/bin/bench start
+2023-04-17 13:24:50,356 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-17 13:24:50,356 INFO /home/redward/.local/bin/bench schedule
+2023-04-17 13:24:50,356 INFO /home/redward/.local/bin/bench worker
+2023-04-17 13:24:50,356 INFO /home/redward/.local/bin/bench watch
+2023-04-17 18:00:02,419 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-18 00:00:02,862 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-18 06:00:03,287 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-18 12:00:02,028 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-18 13:18:27,574 INFO /home/redward/.local/bin/bench start
+2023-04-18 13:18:28,163 INFO /home/redward/.local/bin/bench schedule
+2023-04-18 13:18:28,163 INFO /home/redward/.local/bin/bench worker
+2023-04-18 13:18:28,164 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-18 13:18:28,164 INFO /home/redward/.local/bin/bench watch
+2023-04-18 13:53:45,794 INFO /home/redward/.local/bin/bench export-fixtures
+2023-04-18 13:53:55,480 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-04-18 18:00:02,328 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-19 00:00:01,974 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-19 06:00:01,879 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-19 12:00:01,907 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-19 17:15:49,029 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-04-19 18:00:02,292 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-20 00:00:03,846 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-20 06:00:02,737 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-20 11:10:29,331 INFO /home/redward/.local/bin/bench start
+2023-04-20 11:10:29,829 INFO /home/redward/.local/bin/bench schedule
+2023-04-20 11:10:29,852 INFO /home/redward/.local/bin/bench worker
+2023-04-20 11:10:29,862 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-20 11:10:29,865 INFO /home/redward/.local/bin/bench watch
+2023-04-20 12:00:01,680 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-20 18:00:02,231 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-21 00:00:02,148 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-21 06:00:01,162 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-21 12:00:02,172 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-24 12:00:02,483 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-24 18:00:01,966 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-25 05:40:12,327 INFO /home/redward/.local/bin/bench start
+2023-04-25 05:40:12,988 INFO /home/redward/.local/bin/bench watch
+2023-04-25 05:40:12,988 INFO /home/redward/.local/bin/bench schedule
+2023-04-25 05:40:12,988 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-25 05:40:13,002 INFO /home/redward/.local/bin/bench worker
+2023-04-25 06:00:01,487 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-25 10:45:20,120 INFO /home/redward/.local/bin/bench start
+2023-04-25 10:45:21,295 INFO /home/redward/.local/bin/bench schedule
+2023-04-25 10:45:21,295 INFO /home/redward/.local/bin/bench worker
+2023-04-25 10:45:21,296 INFO /home/redward/.local/bin/bench watch
+2023-04-25 10:45:21,296 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-25 12:00:02,822 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-25 18:00:02,410 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-26 12:00:02,768 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-26 13:10:33,611 INFO /home/redward/.local/bin/bench start
+2023-04-26 13:11:05,120 INFO /home/redward/.local/bin/bench start
+2023-04-26 13:11:05,536 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-04-26 13:11:05,536 INFO /home/redward/.local/bin/bench worker
+2023-04-26 13:11:05,536 INFO /home/redward/.local/bin/bench schedule
+2023-04-26 13:11:05,537 INFO /home/redward/.local/bin/bench watch
+2023-04-27 00:00:02,451 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-27 12:00:01,281 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-27 18:00:01,819 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-28 00:00:01,867 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-28 06:00:02,507 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-28 12:00:03,188 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-28 19:11:22,143 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-29 00:00:01,934 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-04-29 12:00:02,851 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-02 12:00:02,411 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-02 15:36:31,640 INFO /home/redward/.local/bin/bench start
+2023-05-02 15:36:32,717 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-02 15:36:32,717 INFO /home/redward/.local/bin/bench schedule
+2023-05-02 15:36:32,718 INFO /home/redward/.local/bin/bench worker
+2023-05-02 15:36:32,762 INFO /home/redward/.local/bin/bench watch
+2023-05-02 18:00:01,866 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-03 12:00:01,812 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-03 16:53:09,197 INFO /home/redward/.local/bin/bench statr
+2023-05-03 16:53:12,462 INFO /home/redward/.local/bin/bench start
+2023-05-03 16:54:56,169 INFO /home/redward/.local/bin/bench start
+2023-05-03 16:54:56,819 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-03 16:54:56,819 INFO /home/redward/.local/bin/bench worker
+2023-05-03 16:54:56,819 INFO /home/redward/.local/bin/bench schedule
+2023-05-03 16:54:56,819 INFO /home/redward/.local/bin/bench watch
+2023-05-03 17:56:47,371 INFO /home/redward/.local/bin/bench start
+2023-05-03 17:56:48,213 INFO /home/redward/.local/bin/bench worker
+2023-05-03 17:56:48,213 INFO /home/redward/.local/bin/bench watch
+2023-05-03 17:56:48,213 INFO /home/redward/.local/bin/bench schedule
+2023-05-03 17:56:48,213 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-03 18:00:02,741 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-04 00:00:02,626 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-04 16:23:33,578 INFO /home/redward/.local/bin/bench start
+2023-05-04 16:23:34,136 INFO /home/redward/.local/bin/bench worker
+2023-05-04 16:23:34,137 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-04 16:23:34,137 INFO /home/redward/.local/bin/bench schedule
+2023-05-04 16:23:34,137 INFO /home/redward/.local/bin/bench watch
+2023-05-04 18:00:02,084 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-05 00:00:03,106 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-05 12:00:02,362 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-05 18:00:01,865 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-09 12:00:02,065 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-09 18:00:02,614 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-10 09:19:56,155 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:20:06,284 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:20:09,390 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:25:07,382 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:25:08,077 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:25:08,077 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:25:08,077 INFO /home/redward/.local/bin/bench worker
+2023-05-10 09:25:08,077 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:25:23,741 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:25:24,049 INFO /home/redward/.local/bin/bench worker
+2023-05-10 09:25:24,071 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:25:24,083 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:25:24,086 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:26:08,028 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:26:08,428 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:26:08,429 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:26:08,442 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:26:08,442 INFO /home/redward/.local/bin/bench worker
+2023-05-10 09:27:01,726 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:27:02,103 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:27:02,113 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:27:02,118 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:27:02,127 INFO /home/redward/.local/bin/bench worker
+2023-05-10 09:32:09,522 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:32:09,902 INFO /home/redward/.local/bin/bench worker
+2023-05-10 09:32:09,907 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:32:09,911 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:32:09,926 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:36:40,564 INFO /home/redward/.local/bin/bench start
+2023-05-10 09:36:40,936 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 09:36:40,956 INFO /home/redward/.local/bin/bench watch
+2023-05-10 09:36:40,967 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 09:36:40,975 INFO /home/redward/.local/bin/bench worker
+2023-05-10 10:05:09,045 INFO /home/redward/.local/bin/bench --python /usr/local/bin/python3
+2023-05-10 10:10:26,882 INFO /home/redward/.local/bin/bench build
+2023-05-10 10:26:14,958 INFO /home/redward/.local/bin/bench start
+2023-05-10 10:26:15,383 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 10:26:15,399 INFO /home/redward/.local/bin/bench worker
+2023-05-10 10:26:15,418 INFO /home/redward/.local/bin/bench watch
+2023-05-10 10:26:15,435 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 10:40:57,511 INFO /home/redward/.local/bin/bench start
+2023-05-10 10:40:57,857 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 10:40:57,909 INFO /home/redward/.local/bin/bench worker
+2023-05-10 10:40:57,911 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 10:40:57,911 INFO /home/redward/.local/bin/bench watch
+2023-05-10 10:41:28,016 INFO /home/redward/.local/bin/bench start
+2023-05-10 10:41:28,340 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 10:41:28,361 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 10:41:28,389 INFO /home/redward/.local/bin/bench watch
+2023-05-10 10:41:28,394 INFO /home/redward/.local/bin/bench worker
+2023-05-10 10:41:44,233 INFO /home/redward/.local/bin/bench build
+2023-05-10 10:45:50,969 INFO /home/redward/.local/bin/bench start
+2023-05-10 10:45:51,293 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 10:45:51,337 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 10:45:51,341 INFO /home/redward/.local/bin/bench worker
+2023-05-10 10:45:51,346 INFO /home/redward/.local/bin/bench watch
+2023-05-10 12:00:01,483 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-10 12:47:06,819 INFO /home/redward/.local/bin/bench start
+2023-05-10 12:47:07,314 INFO /home/redward/.local/bin/bench worker
+2023-05-10 12:47:07,314 INFO /home/redward/.local/bin/bench watch
+2023-05-10 12:47:07,314 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 12:47:07,314 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 12:50:08,428 INFO /home/redward/.local/bin/bench init frappe-bench --frappe-path https://github.com/frappe/frappe --frappe-branch version-13
+2023-05-10 12:50:08,502 DEBUG cd frappe-bench && python3 -m venv env
+2023-05-10 12:50:08,597 WARNING cd frappe-bench && python3 -m venv env executed with exit code 1
+2023-05-10 12:50:09,602 ERROR There was a problem while creating frappe-bench
+2023-05-10 12:50:38,140 INFO Rolling back Bench "frappe-bench"
+2023-05-10 12:55:00,957 INFO /home/redward/.local/bin/bench start
+2023-05-10 12:55:01,399 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 12:55:01,407 INFO /home/redward/.local/bin/bench worker
+2023-05-10 12:55:01,408 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 12:55:01,418 INFO /home/redward/.local/bin/bench watch
+2023-05-10 13:16:27,868 INFO /home/redward/.local/bin/bench start
+2023-05-10 13:16:28,188 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 13:16:28,191 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 13:16:28,227 INFO /home/redward/.local/bin/bench watch
+2023-05-10 13:16:28,230 INFO /home/redward/.local/bin/bench worker
+2023-05-10 13:16:46,356 INFO /home/redward/.local/bin/bench start python3
+2023-05-10 13:16:46,364 WARNING /home/redward/.local/bin/bench start python3 executed with exit code 2
+2023-05-10 13:19:20,447 INFO /home/redward/.local/bin/bench start
+2023-05-10 13:19:32,870 INFO /home/redward/.local/bin/bench
+2023-05-10 13:19:46,700 INFO /home/redward/.local/bin/bench pip help
+2023-05-10 13:20:31,193 INFO /home/redward/.local/bin/bench config
+2023-05-10 13:22:11,650 INFO /home/redward/.local/bin/bench start
+2023-05-10 13:22:11,987 INFO /home/redward/.local/bin/bench watch
+2023-05-10 13:22:11,991 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 13:22:12,000 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 13:22:12,027 INFO /home/redward/.local/bin/bench worker
+2023-05-10 13:23:00,395 INFO /usr/local/bin/bench install frappe
+2023-05-10 13:23:00,457 WARNING /usr/local/bin/bench install frappe executed with exit code 2
+2023-05-10 13:27:11,467 INFO /home/redward/.local/bin/bench start
+2023-05-10 13:27:11,738 INFO /home/redward/.local/bin/bench schedule
+2023-05-10 13:27:11,774 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-10 13:27:11,779 INFO /home/redward/.local/bin/bench watch
+2023-05-10 13:27:11,786 INFO /home/redward/.local/bin/bench worker
+2023-05-10 13:27:57,617 INFO /home/redward/.local/bin/bench update
+2023-05-10 13:28:37,940 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2023-05-10 13:28:48,181 WARNING /home/redward/.local/bin/bench update executed with exit code 1
+2023-05-10 13:29:19,433 INFO /home/redward/.local/bin/bench update
+2023-05-10 13:30:07,983 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2023-05-10 13:30:18,212 WARNING /home/redward/.local/bin/bench update executed with exit code 1
+2023-05-10 13:34:18,173 INFO /home/redward/.local/bin/bench build
+2023-05-10 13:34:29,671 INFO /home/redward/.local/bin/bench install frappe
+2023-05-10 13:34:29,671 WARNING superuser privileges required for this command
+2023-05-10 13:34:35,713 INFO /usr/local/bin/bench install frappe
+2023-05-10 13:34:35,774 WARNING /usr/local/bin/bench install frappe executed with exit code 2
+2023-05-10 13:34:40,840 INFO /usr/local/bin/bench install pip
+2023-05-10 13:34:40,900 WARNING /usr/local/bin/bench install pip executed with exit code 2
+2023-05-10 13:34:56,638 INFO /home/redward/.local/bin/bench install --help
+2023-05-10 13:34:56,638 WARNING superuser privileges required for this command
+2023-05-10 13:35:01,267 INFO /usr/local/bin/bench install --help
+2023-05-10 13:36:43,169 INFO /home/redward/.local/bin/bench get-app frappe
+2023-05-10 13:37:24,358 INFO App moved from apps/frappe to archived/apps/frappe-2023-05-10
+2023-05-10 13:37:24,361 LOG Getting frappe
+2023-05-10 13:37:24,361 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-05-10 13:48:56,498 WARNING cd ./apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream executed with exit code 128
+2023-05-10 13:48:56,499 WARNING /home/redward/.local/bin/bench get-app frappe executed with exit code 1
+2023-05-10 13:57:13,915 INFO /home/redward/.local/bin/bench
+2023-05-10 14:01:43,674 INFO /home/redward/.local/bin/bench --site wema list-apps
+2023-05-10 14:01:59,803 INFO /home/redward/.local/bin/bench --site all list-apps
+2023-05-10 18:00:02,085 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-11 00:00:01,217 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-11 06:00:01,264 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-11 06:45:47,205 INFO /home/redward/.local/bin/bench start
+2023-05-11 06:46:31,369 INFO /home/redward/.local/bin/bench start
+2023-05-11 06:46:33,992 INFO /home/redward/.local/bin/bench start
+2023-05-11 07:24:10,731 INFO /home/redward/.local/bin/bench start
+2023-05-11 07:24:25,660 INFO /home/redward/.local/bin/bench setp requirements
+2023-05-11 07:24:56,559 INFO /home/redward/.local/bin/bench version
+2023-05-11 07:37:22,799 INFO /home/redward/.local/bin/bench start
+2023-05-11 07:37:23,710 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 07:37:23,820 INFO /home/redward/.local/bin/bench watch
+2023-05-11 07:37:23,891 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 07:37:23,926 INFO /home/redward/.local/bin/bench worker
+2023-05-11 07:39:53,194 INFO /home/redward/.local/bin/bench init
+2023-05-11 07:39:53,202 WARNING /home/redward/.local/bin/bench init executed with exit code 2
+2023-05-11 07:42:46,472 INFO /home/redward/.local/bin/bench start
+2023-05-11 07:42:46,822 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 07:42:46,843 INFO /home/redward/.local/bin/bench worker
+2023-05-11 07:42:46,867 INFO /home/redward/.local/bin/bench watch
+2023-05-11 07:42:46,876 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:09:33,129 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:09:33,520 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:09:33,523 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:09:33,535 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:09:33,546 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:13:42,436 INFO /home/redward/.local/bin/bench --site wema install-app gch_middleware
+2023-05-11 08:15:00,446 INFO /home/redward/.local/bin/bench --version
+2023-05-11 08:15:05,641 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:15:06,032 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:15:06,056 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:15:06,059 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:15:06,062 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:16:33,552 INFO /home/redward/.local/bin/bench get-app gch_middleware https://github.com/Gertrude-s-Children-s-Hospital/gch-middleware
+2023-05-11 08:16:33,563 LOG Getting gch-middleware
+2023-05-11 08:16:33,563 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-middleware  --depth 1 --origin upstream
+2023-05-11 08:16:50,499 WARNING cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-middleware  --depth 1 --origin upstream executed with exit code 128
+2023-05-11 08:16:50,500 WARNING /home/redward/.local/bin/bench get-app gch_middleware https://github.com/Gertrude-s-Children-s-Hospital/gch-middleware executed with exit code 1
+2023-05-11 08:17:40,804 INFO /home/redward/.local/bin/bench get-app gch_middleware https://github.com/Gertrude-s-Children-s-Hospital/gch_middleware
+2023-05-11 08:17:47,042 INFO App moved from apps/gch_middleware to archived/apps/gch_middleware-2023-05-11
+2023-05-11 08:17:47,045 LOG Getting gch_middleware
+2023-05-11 08:17:47,045 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch_middleware  --depth 1 --origin upstream
+2023-05-11 08:18:08,069 LOG Installing gch_middleware
+2023-05-11 08:18:08,559 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_middleware 
+2023-05-11 08:18:19,051 DEBUG bench build --app gch_middleware
+2023-05-11 08:18:19,178 INFO /home/redward/.local/bin/bench build --app gch_middleware
+2023-05-11 08:18:20,119 WARNING bench build --app gch_middleware executed with exit code 1
+2023-05-11 08:18:20,119 WARNING /home/redward/.local/bin/bench get-app gch_middleware https://github.com/Gertrude-s-Children-s-Hospital/gch_middleware executed with exit code 1
+2023-05-11 08:19:28,098 INFO /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema
+2023-05-11 08:19:28,109 LOG Getting egerties_wema
+2023-05-11 08:19:28,109 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema  --depth 1 --origin upstream
+2023-05-11 08:19:31,686 WARNING /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema executed with exit code 1
+2023-05-11 08:21:45,594 INFO /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema
+2023-05-11 08:21:45,610 LOG Getting egerties_wema
+2023-05-11 08:21:45,610 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema  --depth 1 --origin upstream
+2023-05-11 08:23:06,218 WARNING /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema executed with exit code 1
+2023-05-11 08:23:53,021 INFO /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema
+2023-05-11 08:23:56,009 INFO App moved from apps/egerties_wema to archived/apps/egerties_wema-2023-05-11
+2023-05-11 08:23:56,012 LOG Getting egerties_wema
+2023-05-11 08:23:56,012 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema  --depth 1 --origin upstream
+2023-05-11 08:24:53,954 LOG Installing gch_custom
+2023-05-11 08:24:54,402 DEBUG cd /home/redward/Desktop/playground/wema/wema && /home/redward/Desktop/playground/wema/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema/wema/apps/gch_custom 
+2023-05-11 08:24:58,943 DEBUG bench build --app gch_custom
+2023-05-11 08:24:59,096 INFO /home/redward/.local/bin/bench build --app gch_custom
+2023-05-11 08:25:00,150 WARNING bench build --app gch_custom executed with exit code 1
+2023-05-11 08:25:00,150 WARNING /home/redward/.local/bin/bench get-app gch_custom https://github.com/Gertrude-s-Children-s-Hospital/egerties_wema executed with exit code 1
+2023-05-11 08:34:34,207 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:34:34,683 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:34:34,716 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:34:34,726 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:34:34,726 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:36:18,520 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:36:18,865 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:36:18,881 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:36:18,912 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:36:18,915 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:36:41,218 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:36:41,581 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:36:41,596 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:36:41,601 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:36:41,607 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:37:35,122 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:37:35,456 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:37:35,499 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:37:35,506 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:37:35,508 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:40:16,220 INFO /home/redward/.local/bin/bench start
+2023-05-11 08:40:16,585 INFO /home/redward/.local/bin/bench worker
+2023-05-11 08:40:16,589 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 08:40:16,589 INFO /home/redward/.local/bin/bench watch
+2023-05-11 08:40:16,591 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 08:41:02,466 INFO /home/redward/.local/bin/bench migrate
+2023-05-11 08:41:10,384 INFO /home/redward/.local/bin/bench build
+2023-05-11 08:46:38,156 INFO /home/redward/.local/bin/bench migrate
+2023-05-11 08:46:56,413 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-05-11 08:48:14,847 INFO /home/redward/.local/bin/bench set-config -g developer_mode 1
+2023-05-11 08:49:31,298 INFO /home/redward/.local/bin/bench --site wema clear-cache
+2023-05-11 08:51:35,573 INFO /home/redward/.local/bin/bench migrate
+2023-05-11 08:51:43,494 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-05-11 08:56:03,626 INFO /home/redward/.local/bin/bench update
+2023-05-11 08:56:44,386 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2023-05-11 08:57:00,980 WARNING /home/redward/.local/bin/bench update executed with exit code 1
+2023-05-11 12:00:02,078 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-11 13:09:58,774 INFO /home/redward/.local/bin/bench start
+2023-05-11 13:09:59,475 INFO /home/redward/.local/bin/bench watch
+2023-05-11 13:09:59,505 INFO /home/redward/.local/bin/bench worker
+2023-05-11 13:09:59,505 INFO /home/redward/.local/bin/bench schedule
+2023-05-11 13:09:59,510 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-11 16:56:51,614 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-05-11 16:58:08,345 INFO /home/redward/.local/bin/bench migrate
+2023-05-11 16:58:16,583 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-05-11 17:14:33,382 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-05-11 18:00:03,267 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-12 00:00:04,222 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-12 06:00:03,274 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-12 12:00:02,998 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-12 18:00:01,749 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-15 09:12:18,000 INFO /home/redward/.local/bin/bench start
+2023-05-15 09:12:18,573 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-15 09:12:18,620 INFO /home/redward/.local/bin/bench schedule
+2023-05-15 09:12:18,622 INFO /home/redward/.local/bin/bench worker
+2023-05-15 09:12:18,625 INFO /home/redward/.local/bin/bench watch
+2023-05-15 12:00:02,317 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-15 18:00:03,164 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-16 09:11:51,380 INFO /home/redward/.local/bin/bench start
+2023-05-16 09:11:52,039 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-16 09:11:52,039 INFO /home/redward/.local/bin/bench schedule
+2023-05-16 09:11:52,039 INFO /home/redward/.local/bin/bench worker
+2023-05-16 09:11:52,042 INFO /home/redward/.local/bin/bench watch
+2023-05-16 16:12:23,628 INFO /home/redward/.local/bin/bench start
+2023-05-16 16:12:24,216 INFO /home/redward/.local/bin/bench watch
+2023-05-16 16:12:24,216 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-16 16:12:24,216 INFO /home/redward/.local/bin/bench schedule
+2023-05-16 16:12:24,216 INFO /home/redward/.local/bin/bench worker
+2023-05-16 16:41:01,710 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-05-16 18:00:02,271 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-17 12:00:02,891 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-17 17:06:37,894 INFO /home/redward/.local/bin/bench start
+2023-05-17 17:06:38,598 INFO /home/redward/.local/bin/bench schedule
+2023-05-17 17:06:38,598 INFO /home/redward/.local/bin/bench watch
+2023-05-17 17:06:38,598 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-17 17:06:38,598 INFO /home/redward/.local/bin/bench worker
+2023-05-17 17:47:50,315 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-05-17 18:00:02,260 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-18 00:00:03,373 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-18 06:00:01,468 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-18 08:52:52,296 INFO /home/redward/.local/bin/bench start
+2023-05-18 08:52:52,963 INFO /home/redward/.local/bin/bench watch
+2023-05-18 08:52:52,963 INFO /home/redward/.local/bin/bench schedule
+2023-05-18 08:52:52,963 INFO /home/redward/.local/bin/bench worker
+2023-05-18 08:52:52,963 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-18 09:25:33,210 INFO /home/redward/.local/bin/bench start
+2023-05-18 09:25:33,918 INFO /home/redward/.local/bin/bench worker
+2023-05-18 09:25:33,918 INFO /home/redward/.local/bin/bench watch
+2023-05-18 09:25:33,918 INFO /home/redward/.local/bin/bench schedule
+2023-05-18 09:25:33,918 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-18 12:00:02,856 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-19 08:31:32,999 INFO /home/redward/.local/bin/bench --site wema enable-scheduler
+2023-05-19 08:32:17,577 INFO /home/redward/.local/bin/bench restart
+2023-05-19 08:32:17,625 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-05-19 08:32:23,995 INFO /home/redward/.local/bin/bench reload
+2023-05-19 08:32:31,839 INFO /home/redward/.local/bin/bench start
+2023-05-19 08:32:32,572 INFO /home/redward/.local/bin/bench worker
+2023-05-19 08:32:32,581 INFO /home/redward/.local/bin/bench watch
+2023-05-19 08:32:32,600 INFO /home/redward/.local/bin/bench schedule
+2023-05-19 08:32:32,603 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-19 08:38:41,676 INFO /home/redward/.local/bin/bench --site wema enable-scheduler
+2023-05-19 08:38:59,314 INFO /home/redward/.local/bin/bench --site wema enable-scheduler
+2023-05-19 12:00:03,053 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-19 18:00:02,110 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-20 00:00:01,615 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-20 18:00:02,267 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-22 18:00:02,061 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-23 06:00:01,746 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-23 08:59:40,252 INFO /home/redward/.local/bin/bench strt
+2023-05-23 08:59:46,284 INFO /home/redward/.local/bin/bench start
+2023-05-23 08:59:46,754 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-23 08:59:46,764 INFO /home/redward/.local/bin/bench worker
+2023-05-23 08:59:46,780 INFO /home/redward/.local/bin/bench watch
+2023-05-23 08:59:46,809 INFO /home/redward/.local/bin/bench schedule
+2023-05-24 06:00:03,152 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-24 08:45:37,919 INFO /home/redward/.local/bin/bench start
+2023-05-24 08:45:38,416 INFO /home/redward/.local/bin/bench worker
+2023-05-24 08:45:38,434 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-05-24 08:45:38,462 INFO /home/redward/.local/bin/bench schedule
+2023-05-24 08:45:38,462 INFO /home/redward/.local/bin/bench watch
+2023-05-24 12:00:02,393 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-24 18:00:02,039 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-25 00:00:03,466 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-25 06:00:02,485 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-25 12:00:02,461 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-25 18:00:01,935 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-26 00:00:02,405 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-26 06:00:01,675 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-26 12:00:02,117 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-26 18:00:02,423 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-27 12:00:03,253 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-29 12:00:02,663 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-29 18:00:01,936 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-30 00:00:01,863 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-30 06:00:01,547 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-30 12:00:01,878 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-30 18:00:02,262 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-31 12:00:01,657 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-05-31 18:00:02,474 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-01 00:00:03,317 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-01 12:00:02,122 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-01 18:00:02,308 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-02 00:00:03,566 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-02 12:00:02,464 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-02 18:00:02,268 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-03 00:00:02,533 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-03 06:00:02,499 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-03 18:00:03,459 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-04 00:00:03,124 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-04 06:00:01,553 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-04 12:00:03,128 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-04 18:00:02,141 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-05 00:00:01,606 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-05 06:00:02,129 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-05 12:00:02,097 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-05 18:00:02,217 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-06 12:00:02,817 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-06 18:00:02,351 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-07 00:00:03,261 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-07 06:00:02,700 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-07 12:00:03,103 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-07 12:49:24,554 INFO /home/redward/.local/bin/bench start
+2023-06-07 12:49:54,720 INFO /home/redward/.local/bin/bench start
+2023-06-07 12:49:55,120 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-07 12:49:55,120 INFO /home/redward/.local/bin/bench watch
+2023-06-07 12:49:55,120 INFO /home/redward/.local/bin/bench schedule
+2023-06-07 12:49:55,120 INFO /home/redward/.local/bin/bench worker
+2023-06-07 12:57:30,727 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-06-07 13:35:45,857 INFO /home/redward/.local/bin/bench start
+2023-06-07 13:35:47,022 INFO /home/redward/.local/bin/bench schedule
+2023-06-07 13:35:47,022 INFO /home/redward/.local/bin/bench worker
+2023-06-07 13:35:47,022 INFO /home/redward/.local/bin/bench watch
+2023-06-07 13:35:47,022 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-07 18:00:02,191 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-08 12:00:02,628 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-09 08:32:15,493 INFO /home/redward/.local/bin/bench start
+2023-06-09 08:32:16,161 INFO /home/redward/.local/bin/bench watch
+2023-06-09 08:32:16,168 INFO /home/redward/.local/bin/bench schedule
+2023-06-09 08:32:16,175 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-09 08:32:16,190 INFO /home/redward/.local/bin/bench worker
+2023-06-09 12:00:02,136 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-10 00:00:02,636 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-12 12:00:02,008 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-12 18:00:01,910 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-13 00:00:02,728 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-13 12:00:02,758 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-14 12:00:01,969 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-15 09:39:13,120 INFO /home/redward/.local/bin/bench start
+2023-06-15 09:39:57,510 INFO /home/redward/.local/bin/bench start
+2023-06-15 09:39:58,020 INFO /home/redward/.local/bin/bench watch
+2023-06-15 09:39:58,021 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-15 09:39:58,067 INFO /home/redward/.local/bin/bench worker
+2023-06-15 09:39:58,070 INFO /home/redward/.local/bin/bench schedule
+2023-06-15 09:45:06,811 INFO /home/redward/.local/bin/bench start
+2023-06-15 12:00:02,392 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-15 15:38:16,280 INFO /home/redward/.local/bin/bench start
+2023-06-15 15:38:16,808 INFO /home/redward/.local/bin/bench worker
+2023-06-15 15:38:16,808 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-15 15:38:16,822 INFO /home/redward/.local/bin/bench watch
+2023-06-15 15:38:16,824 INFO /home/redward/.local/bin/bench schedule
+2023-06-15 15:41:23,961 INFO /home/redward/.local/bin/bench start
+2023-06-15 15:41:24,376 INFO /home/redward/.local/bin/bench worker
+2023-06-15 15:41:24,383 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-15 15:41:24,384 INFO /home/redward/.local/bin/bench schedule
+2023-06-15 15:41:24,435 INFO /home/redward/.local/bin/bench watch
+2023-06-16 12:00:02,318 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-19 10:40:02,546 INFO /home/redward/.local/bin/bench version
+2023-06-19 12:00:01,468 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-20 06:00:01,884 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-20 12:00:02,544 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-20 18:00:02,101 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-21 18:00:03,441 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-22 07:14:00,265 INFO /home/redward/.local/bin/bench start
+2023-06-22 07:14:00,862 INFO /home/redward/.local/bin/bench worker
+2023-06-22 07:14:00,862 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-22 07:14:00,874 INFO /home/redward/.local/bin/bench schedule
+2023-06-22 07:14:00,877 INFO /home/redward/.local/bin/bench watch
+2023-06-22 08:35:59,160 INFO /home/redward/.local/bin/bench start
+2023-06-22 08:35:59,715 INFO /home/redward/.local/bin/bench worker
+2023-06-22 08:35:59,715 INFO /home/redward/.local/bin/bench schedule
+2023-06-22 08:35:59,715 INFO /home/redward/.local/bin/bench watch
+2023-06-22 08:35:59,715 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-06-22 08:39:46,057 INFO /home/redward/.local/bin/bench migrate
+2023-06-22 08:39:56,213 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-06-22 08:41:50,347 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-06-29 18:00:02,756 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-30 06:00:02,019 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-30 12:00:02,230 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-06-30 18:00:02,331 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-03 12:00:02,573 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-05 09:20:11,227 INFO /home/redward/.local/bin/bench start
+2023-07-05 09:20:11,929 INFO /home/redward/.local/bin/bench watch
+2023-07-05 09:20:11,929 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-07-05 09:20:11,929 INFO /home/redward/.local/bin/bench worker
+2023-07-05 09:20:11,929 INFO /home/redward/.local/bin/bench schedule
+2023-07-05 14:50:46,203 INFO /home/redward/.local/bin/bench start
+2023-07-05 14:50:46,848 INFO /home/redward/.local/bin/bench watch
+2023-07-05 14:50:46,848 INFO /home/redward/.local/bin/bench schedule
+2023-07-05 14:50:46,877 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-07-05 14:50:46,896 INFO /home/redward/.local/bin/bench worker
+2023-07-06 00:00:03,567 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-07 12:00:02,803 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-07 18:00:02,415 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-11 18:00:03,726 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-12 12:00:03,236 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-12 18:00:03,085 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-13 12:00:03,079 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-14 00:00:02,530 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-14 06:00:02,395 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-14 12:00:02,592 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-17 18:00:02,146 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-18 12:00:02,388 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-18 18:00:01,577 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-19 12:00:02,063 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-20 12:00:03,508 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-21 12:00:02,372 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-24 12:00:02,614 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-25 06:00:02,271 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-25 12:00:03,211 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-25 18:00:02,375 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-26 00:00:03,072 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-26 06:00:02,915 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-26 18:00:03,614 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-27 06:00:02,524 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-28 12:00:02,671 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-07-31 12:00:01,804 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-01 12:00:02,408 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-02 12:00:02,875 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-03 00:00:03,990 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-03 06:00:03,097 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-04 00:00:03,382 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-04 12:00:03,301 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-07 06:03:21,854 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-07 12:00:01,925 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-08 18:00:02,182 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-09 18:00:03,692 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-10 00:00:03,628 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-10 18:00:02,653 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-14 12:00:03,007 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-17 00:00:03,038 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-18 18:00:03,154 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-21 18:00:02,495 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-22 06:53:11,267 INFO /home/redward/.local/bin/bench --site wema start
+2023-08-22 06:53:11,280 WARNING /home/redward/.local/bin/bench --site wema start executed with exit code 2
+2023-08-22 06:53:13,076 INFO A newer version of bench is available: 5.16.2 → 5.17.0
+2023-08-22 06:53:19,809 INFO /home/redward/.local/bin/bench start
+2023-08-22 06:53:20,809 INFO /home/redward/.local/bin/bench worker
+2023-08-22 06:53:20,811 INFO /home/redward/.local/bin/bench schedule
+2023-08-22 06:53:20,815 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-08-22 06:53:20,820 INFO /home/redward/.local/bin/bench watch
+2023-08-22 06:56:51,379 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 06:57:46,843 INFO /home/redward/.local/bin/bench marialdb
+2023-08-22 06:57:53,922 INFO /home/redward/.local/bin/bench mariadb
+2023-08-22 06:58:09,458 INFO /home/redward/.local/bin/bench --site wema mariadb
+2023-08-22 06:59:03,411 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 07:27:30,878 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 11:03:50,557 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 11:20:55,044 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 11:26:28,072 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 14:49:38,574 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 14:51:10,060 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 14:58:58,386 INFO /home/redward/.local/bin/bench --site wema migrate
+2023-08-22 18:00:02,755 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-23 12:00:01,963 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-23 19:51:02,030 INFO /home/redward/.local/bin/bench start
+2023-08-23 19:51:02,709 INFO /home/redward/.local/bin/bench schedule
+2023-08-23 19:51:02,709 INFO /home/redward/.local/bin/bench worker
+2023-08-23 19:51:02,710 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-08-23 19:51:02,712 INFO /home/redward/.local/bin/bench watch
+2023-08-24 08:20:10,465 INFO /home/redward/.local/bin/bench start
+2023-08-24 08:20:11,076 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-08-24 08:20:11,077 INFO /home/redward/.local/bin/bench worker
+2023-08-24 08:20:11,078 INFO /home/redward/.local/bin/bench watch
+2023-08-24 08:20:11,079 INFO /home/redward/.local/bin/bench schedule
+2023-08-28 12:00:02,492 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-08-29 12:00:03,202 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-01 11:00:10,947 INFO /home/redward/.local/bin/bench start
+2023-09-01 11:00:11,719 INFO /home/redward/.local/bin/bench watch
+2023-09-01 11:00:11,731 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-09-01 11:00:11,745 INFO /home/redward/.local/bin/bench schedule
+2023-09-01 11:00:11,746 INFO /home/redward/.local/bin/bench worker
+2023-09-01 12:00:02,506 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-05 12:00:03,415 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-06 06:00:03,702 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-07 00:00:11,560 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-07 18:00:03,537 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-09 18:00:03,273 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-12 12:00:02,739 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-13 12:00:02,569 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-13 14:35:09,446 INFO /home/redward/.local/bin/bench start
+2023-09-13 14:35:10,070 INFO /home/redward/.local/bin/bench worker
+2023-09-13 14:35:10,071 INFO /home/redward/.local/bin/bench serve --port 8000
+2023-09-13 14:35:10,073 INFO /home/redward/.local/bin/bench watch
+2023-09-13 14:35:10,074 INFO /home/redward/.local/bin/bench schedule
+2023-09-13 14:46:28,693 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2023-09-14 12:00:03,561 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-15 18:00:02,855 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-18 18:00:02,777 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-20 18:00:03,086 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-21 06:00:02,281 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-21 18:00:02,895 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-22 00:00:03,258 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-26 18:00:02,533 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-27 18:00:02,064 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-28 00:00:05,942 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-09-28 12:00:34,834 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-03 18:00:03,126 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-04 12:00:02,217 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-05 00:00:03,288 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-05 12:00:02,120 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-05 18:00:02,448 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-12 12:00:02,912 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-13 00:00:02,523 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-13 12:00:02,134 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-13 18:00:02,622 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-14 18:00:02,025 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-16 12:00:02,731 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-17 06:00:02,230 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-17 18:00:02,863 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-18 12:00:02,843 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-19 12:00:02,771 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-23 12:00:02,430 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-24 06:00:02,325 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-24 12:00:03,391 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-26 12:00:02,854 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-26 18:00:02,819 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-27 12:00:03,167 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-28 18:00:02,877 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-30 12:00:02,267 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-10-31 18:00:03,339 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-01 06:00:02,649 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-01 12:00:02,577 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-02 00:00:02,335 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-02 12:00:03,428 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-04 12:00:02,644 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-07 18:00:02,315 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-08 06:00:02,517 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-08 18:00:02,065 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-09 06:00:02,100 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-09 18:00:02,640 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-10 18:00:01,988 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-15 12:00:02,214 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-16 12:00:03,268 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-16 18:00:02,317 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-17 00:00:03,103 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-17 12:00:02,699 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-20 12:00:01,366 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-21 18:00:03,140 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-23 00:00:02,329 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-23 12:00:02,269 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-23 18:00:03,778 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-24 18:00:02,507 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-29 12:00:02,486 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-11-29 18:00:02,133 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-01 12:00:02,704 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-04 06:00:02,069 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-04 12:00:02,739 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-05 00:00:02,186 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-05 12:00:01,711 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-05 18:00:02,632 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-06 12:00:02,570 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-07 18:00:02,584 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-10 12:00:02,278 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-11 12:00:01,839 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-14 00:00:02,970 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-14 06:00:03,028 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-14 12:00:03,270 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-17 00:00:02,753 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-17 18:00:02,488 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-18 06:00:01,666 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-18 12:00:02,457 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-19 12:00:02,049 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-20 12:00:02,594 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-21 00:00:02,555 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-21 12:00:02,642 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-23 00:00:03,521 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-23 06:00:02,555 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2023-12-26 00:00:03,163 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-01 12:00:02,601 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-01 18:00:02,046 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-04 00:00:03,560 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-12 12:00:02,600 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-17 12:00:02,796 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-18 12:00:03,084 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-19 00:00:03,391 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-22 12:00:02,762 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-23 06:00:02,625 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-23 12:00:02,562 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-23 18:00:03,344 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-24 00:00:02,945 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-24 12:00:02,160 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-25 18:00:02,969 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-26 12:00:03,896 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-31 00:00:03,047 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-31 06:00:01,789 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-01-31 12:00:03,851 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-06 12:00:03,093 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-07 00:00:03,640 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-07 06:00:01,887 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-07 18:00:03,388 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-08 00:00:02,920 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-08 12:00:03,631 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-08 18:00:02,862 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-09 00:00:03,671 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-09 06:00:02,049 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-09 18:00:03,744 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-11 09:29:22,559 INFO /home/redward/.local/bin/bench start
+2024-02-11 09:29:23,289 INFO /home/redward/.local/bin/bench worker
+2024-02-11 09:29:23,289 INFO /home/redward/.local/bin/bench schedule
+2024-02-11 09:29:23,289 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-11 09:29:23,289 INFO /home/redward/.local/bin/bench watch
+2024-02-12 12:00:02,532 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-13 12:00:02,845 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-13 18:00:03,526 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-14 00:00:02,922 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-14 06:00:02,023 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-14 12:00:02,223 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-14 18:00:02,052 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-15 00:00:01,796 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-15 06:00:01,456 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-15 07:49:46,625 INFO /home/redward/.local/bin/bench start
+2024-02-15 07:49:47,359 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-15 07:49:47,369 INFO /home/redward/.local/bin/bench schedule
+2024-02-15 07:49:47,383 INFO /home/redward/.local/bin/bench watch
+2024-02-15 07:49:47,412 INFO /home/redward/.local/bin/bench worker
+2024-02-15 07:55:34,370 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-02-15 08:14:33,088 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-02-15 08:45:20,574 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2024-02-15 09:33:46,001 INFO /home/redward/.local/bin/bench start
+2024-02-15 09:33:51,174 INFO /home/redward/.local/bin/bench schedule
+2024-02-15 09:33:51,218 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-15 09:33:51,404 INFO /home/redward/.local/bin/bench worker
+2024-02-15 09:33:51,489 INFO /home/redward/.local/bin/bench watch
+2024-02-15 12:00:02,803 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-15 13:20:22,756 INFO /home/redward/.local/bin/bench start
+2024-02-15 13:20:23,751 INFO /home/redward/.local/bin/bench worker
+2024-02-15 13:20:23,751 INFO /home/redward/.local/bin/bench watch
+2024-02-15 13:20:23,753 INFO /home/redward/.local/bin/bench schedule
+2024-02-15 13:20:23,775 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-15 18:00:02,791 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-16 00:00:03,184 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-16 06:00:02,549 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-16 12:00:03,124 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-16 12:23:21,279 INFO /home/redward/.local/bin/bench start
+2024-02-16 12:23:22,402 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-16 12:23:22,402 INFO /home/redward/.local/bin/bench worker
+2024-02-16 12:23:22,402 INFO /home/redward/.local/bin/bench watch
+2024-02-16 12:23:22,402 INFO /home/redward/.local/bin/bench schedule
+2024-02-16 12:42:59,145 INFO /home/redward/.local/bin/bench start
+2024-02-16 12:43:00,891 INFO /home/redward/.local/bin/bench schedule
+2024-02-16 12:43:00,891 INFO /home/redward/.local/bin/bench watch
+2024-02-16 12:43:00,892 INFO /home/redward/.local/bin/bench worker
+2024-02-16 12:43:00,893 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-02-17 00:00:02,514 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-19 12:00:01,359 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-20 06:00:03,122 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-20 18:00:04,448 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-21 00:00:03,361 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-21 12:00:02,012 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-23 12:00:02,824 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-25 12:01:59,160 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-25 18:00:02,209 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-27 12:00:01,870 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-28 00:00:03,676 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-28 06:00:02,233 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-28 12:00:03,754 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-28 18:00:02,707 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-29 12:00:02,485 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-02-29 18:00:03,555 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-01 06:00:02,629 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-01 12:00:02,426 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-05 06:00:01,776 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-05 12:00:02,126 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-06 12:00:02,498 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-07 12:00:02,673 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-08 06:00:01,506 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-08 07:55:46,142 INFO /home/redward/.local/bin/bench start 9000
+2024-03-08 07:55:46,159 WARNING /home/redward/.local/bin/bench start 9000 executed with exit code 2
+2024-03-08 07:55:47,089 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-08 07:55:52,927 INFO /home/redward/.local/bin/bench start :9000
+2024-03-08 07:55:52,941 WARNING /home/redward/.local/bin/bench start :9000 executed with exit code 2
+2024-03-08 07:55:53,454 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-08 07:55:57,164 INFO /home/redward/.local/bin/bench start
+2024-03-08 07:56:04,508 INFO /home/redward/.local/bin/bench start
+2024-03-08 07:56:05,028 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-03-08 07:56:05,077 INFO /home/redward/.local/bin/bench watch
+2024-03-08 07:56:05,081 INFO /home/redward/.local/bin/bench schedule
+2024-03-08 07:56:05,089 INFO /home/redward/.local/bin/bench worker
+2024-03-08 12:00:01,903 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-09 00:00:02,797 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-11 12:00:02,088 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-12 12:00:02,162 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-12 18:00:02,682 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-13 12:00:02,507 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-14 12:00:03,611 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-14 18:00:02,685 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-20 12:00:02,199 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-21 12:00:02,915 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-22 00:00:03,602 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-22 12:00:02,669 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-22 18:00:02,215 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-25 12:00:02,837 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-03-28 08:15:51,856 INFO /home/redward/.local/bin/bench start
+2024-03-28 08:15:52,743 INFO /home/redward/.local/bin/bench schedule
+2024-03-28 08:15:52,743 INFO /home/redward/.local/bin/bench watch
+2024-03-28 08:15:52,747 INFO /home/redward/.local/bin/bench worker
+2024-03-28 08:15:52,747 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-04-02 08:00:53,582 INFO /home/redward/.local/bin/bench start
+2024-04-02 08:00:55,180 INFO /home/redward/.local/bin/bench worker
+2024-04-02 08:00:55,180 INFO /home/redward/.local/bin/bench schedule
+2024-04-02 08:00:55,180 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-04-02 08:00:55,181 INFO /home/redward/.local/bin/bench watch
+2024-04-02 08:30:59,494 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-04-02 08:48:43,554 INFO /home/redward/.local/bin/bench --site wema export-fixtures
+2024-04-02 12:00:02,674 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-02 18:00:04,373 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-04 06:00:03,222 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-04 12:00:02,284 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-10 00:00:02,170 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-10 18:00:02,364 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-15 00:00:02,531 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-18 00:00:02,093 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-22 12:00:02,146 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-24 12:00:02,355 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-26 12:00:03,739 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-26 18:00:03,306 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-04-30 00:00:02,234 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-01 00:00:06,975 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-01 12:00:02,227 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-02 12:00:03,420 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-02 18:00:02,376 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-03 12:00:01,671 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-08 06:00:02,774 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-09 12:00:02,266 INFO /home/redward/.local/bin/bench --verbose --site all backup
+2024-05-09 12:33:39,988 INFO /home/redward/.local/bin/bench --site wema uninstall-app gch_custom/
+2024-05-09 12:35:02,846 INFO /home/redward/.local/bin/bench --site wema uninstall-app gch_custom
+2024-05-09 12:38:15,887 INFO /home/redward/.local/bin/bench start
+2024-05-09 12:38:16,575 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-05-09 12:38:16,575 INFO /home/redward/.local/bin/bench watch
+2024-05-09 12:38:16,575 INFO /home/redward/.local/bin/bench worker
+2024-05-09 12:38:16,575 INFO /home/redward/.local/bin/bench schedule
+2024-05-09 12:38:23,982 INFO /home/redward/.local/bin/bench --site wema uninstall-app gch_custom
+2024-05-09 12:40:21,767 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-09 12:40:21,775 LOG Getting gch-inpatient
+2024-05-09 12:40:21,775 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-09 12:40:24,364 LOG Installing gch_inpatient
+2024-05-09 12:40:24,785 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-09 12:40:27,692 DEBUG bench build --app gch_inpatient
+2024-05-09 12:40:27,809 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-09 12:40:30,201 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-09 12:40:30,201 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-09 12:40:30,891 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-09 12:41:29,805 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-custom
+2024-05-09 12:41:29,813 LOG Getting gch-custom
+2024-05-09 12:41:29,813 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-custom  --depth 1 --origin upstream
+2024-05-09 12:41:37,400 LOG Installing gch_custom
+2024-05-09 12:41:37,815 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_custom 
+2024-05-09 12:41:41,716 DEBUG bench build --app gch_custom
+2024-05-09 12:41:41,830 INFO /home/redward/.local/bin/bench build --app gch_custom
+2024-05-09 12:41:43,819 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-05-09 12:41:44,511 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-09 12:43:23,784 INFO /home/redward/.local/bin/bench --site wema install-app gch_custom
+2024-05-09 12:47:06,650 INFO /home/redward/.local/bin/bench --site wema install-app gch_inpatient/
+2024-05-09 12:47:10,400 INFO /home/redward/.local/bin/bench --site wema install-app gch_inpatient
+2024-05-09 12:48:02,496 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-09 12:48:02,505 LOG Getting gch-inpatient
+2024-05-09 12:48:02,505 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-09 12:48:19,191 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-09 12:48:20,588 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-09 12:48:49,020 INFO /home/redward/.local/bin/bench --site wema install-app gch_inpatient
+2024-05-09 12:49:43,872 INFO /home/redward/.local/bin/bench --site wema install-app gch_inpatient
+2024-05-09 12:49:49,985 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-09 12:49:52,457 INFO App moved from apps/gch-inpatient to archived/apps/gch-inpatient-2024-05-09
+2024-05-09 12:49:52,459 LOG Getting gch-inpatient
+2024-05-09 12:49:52,459 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-09 12:50:30,383 LOG Installing gch_inpatient
+2024-05-09 12:50:30,843 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-09 12:50:33,419 DEBUG bench build --app gch_inpatient
+2024-05-09 12:50:33,567 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-09 12:50:35,916 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-09 12:50:35,916 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-09 12:50:36,578 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-14 19:27:38,629 INFO /home/redward/.local/bin/bench start
+2024-05-14 19:27:39,464 INFO /home/redward/.local/bin/bench watch
+2024-05-14 19:27:39,507 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-05-14 19:27:39,527 INFO /home/redward/.local/bin/bench worker
+2024-05-14 19:27:39,532 INFO /home/redward/.local/bin/bench schedule
+2024-05-14 19:34:07,934 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-14 19:42:46,939 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-14 19:42:46,954 LOG Getting gch-inpatient
+2024-05-14 19:42:46,954 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-14 19:42:51,750 LOG Installing gch_inpatient
+2024-05-14 19:42:52,488 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-14 19:42:58,208 DEBUG bench build --app gch_inpatient
+2024-05-14 19:42:58,431 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-14 19:43:02,325 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-14 19:43:02,325 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-14 19:43:03,302 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-14 19:48:03,920 INFO /home/redward/.local/bin/bench build --app erpnext
+2024-05-14 19:48:37,979 INFO /home/redward/.local/bin/bench build --app gch_custom
+2024-05-14 19:48:51,709 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-14 19:52:35,178 INFO /home/redward/.local/bin/bench /env/bin/activate
+2024-05-16 11:11:25,806 INFO /home/redward/.local/bin/bench migrate
+2024-05-16 11:11:48,991 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 11:11:58,384 INFO /home/redward/.local/bin/bench start
+2024-05-16 11:11:59,269 INFO /home/redward/.local/bin/bench watch
+2024-05-16 11:11:59,269 INFO /home/redward/.local/bin/bench worker
+2024-05-16 11:11:59,269 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-05-16 11:11:59,269 INFO /home/redward/.local/bin/bench schedule
+2024-05-16 11:12:12,195 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 11:17:33,807 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 11:23:42,271 INFO /home/redward/.local/bin/bench --site wema build gch_inpatient/
+2024-05-16 11:23:58,701 INFO /home/redward/.local/bin/bench --site wema build gch_inpatient
+2024-05-16 11:27:02,634 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-16 11:27:02,681 LOG Getting gch-inpatient
+2024-05-16 11:27:02,681 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-16 11:27:07,532 LOG Installing gch_inpatient
+2024-05-16 11:27:08,141 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-16 11:27:14,907 DEBUG bench build --app gch_inpatient
+2024-05-16 11:27:15,149 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-16 11:27:21,487 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-16 11:27:21,487 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-16 11:27:23,504 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-16 11:28:32,224 INFO /home/redward/.local/bin/bench migrate
+2024-05-16 11:28:44,386 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 11:34:56,750 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 12:08:45,797 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-16 12:17:48,386 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-16 12:17:48,400 LOG Getting gch-inpatient
+2024-05-16 12:17:48,400 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-16 12:17:52,612 LOG Installing gch_inpatient
+2024-05-16 12:17:53,275 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-16 12:17:57,682 DEBUG bench build --app gch_inpatient
+2024-05-16 12:17:57,898 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-16 12:18:02,335 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-16 12:18:02,335 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-16 12:18:03,091 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-16 12:19:29,537 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-16 12:38:11,265 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-17 11:43:01,768 INFO /home/redward/.local/bin/bench mariadb
+2024-05-17 11:43:37,154 INFO /home/redward/.local/bin/bench --site wema mariadb
+2024-05-17 11:44:12,306 INFO /home/redward/.local/bin/bench --site wema mariadb
+2024-05-17 11:46:33,564 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-17 11:53:57,677 INFO /home/redward/.local/bin/bench --site wema mariadb
+2024-05-17 11:54:18,828 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-17 11:55:12,117 INFO /home/redward/.local/bin/bench --site wema mariadb
+2024-05-17 11:56:52,860 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-17 11:57:28,649 INFO /home/redward/.local/bin/bench apps gch_inpatient build
+2024-05-17 12:00:05,004 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-17 12:00:05,047 LOG Getting gch-inpatient
+2024-05-17 12:00:05,048 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-17 12:00:09,012 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-17 12:00:09,785 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-17 12:00:41,643 INFO /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient
+2024-05-17 12:00:43,139 INFO App moved from apps/gch-inpatient to archived/apps/gch-inpatient-2024-05-17
+2024-05-17 12:00:43,147 LOG Getting gch-inpatient
+2024-05-17 12:00:43,148 DEBUG cd ./apps && git clone https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient  --depth 1 --origin upstream
+2024-05-17 12:00:46,618 LOG Installing gch_inpatient
+2024-05-17 12:00:47,403 DEBUG cd /home/redward/Desktop/playground/wema-backup/wema && /home/redward/Desktop/playground/wema-backup/wema/env/bin/python -m pip install --quiet --upgrade -e /home/redward/Desktop/playground/wema-backup/wema/apps/gch_inpatient 
+2024-05-17 12:00:52,550 DEBUG bench build --app gch_inpatient
+2024-05-17 12:00:52,767 INFO /home/redward/.local/bin/bench build --app gch_inpatient
+2024-05-17 12:00:58,469 WARNING bench build --app gch_inpatient executed with exit code 1
+2024-05-17 12:00:58,470 WARNING /home/redward/.local/bin/bench get-app https://github.com/Gertrude-s-Children-s-Hospital/gch-inpatient executed with exit code 1
+2024-05-17 12:00:59,027 INFO A newer version of bench is available: 5.16.2 → 5.22.6
+2024-05-17 12:04:19,928 INFO /home/redward/.local/bin/bench install-app gch_inpatient/
+2024-05-17 12:04:37,690 INFO /home/redward/.local/bin/bench --site wema install-app gch_inpatient
+2024-05-17 12:05:03,990 INFO /home/redward/.local/bin/bench --site wema migrate
+2024-05-17 12:06:49,086 INFO /home/redward/.local/bin/bench start
+2024-05-17 12:07:01,137 INFO /home/redward/.local/bin/bench start
+2024-05-17 12:07:01,756 INFO /home/redward/.local/bin/bench watch
+2024-05-17 12:07:01,785 INFO /home/redward/.local/bin/bench serve --port 8000
+2024-05-17 12:07:01,803 INFO /home/redward/.local/bin/bench worker
+2024-05-17 12:07:01,804 INFO /home/redward/.local/bin/bench schedule

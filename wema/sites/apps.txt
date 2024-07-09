@@ -1,0 +1,9 @@
+frappe
+gch_inpatient
+gch_middleware
+gch_custom
+erpnext
+gch_theme
+gch_messaging
+gch_sentry
+gch_queue

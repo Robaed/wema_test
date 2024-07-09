@@ -1,0 +1,15 @@
+2023-04-20 06:00:58,805 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for wema
+2023-04-20 06:00:58,967 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for wema
+2023-04-20 06:00:59,257 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for wema
+2023-04-20 06:00:59,355 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for wema
+2023-04-20 06:00:59,672 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for wema
+2023-04-20 06:00:59,759 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for wema
+2023-04-20 06:01:00,040 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for wema
+2023-04-20 06:01:00,153 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for wema
+2023-04-20 06:01:00,491 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for wema
+2023-04-20 06:01:00,618 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for wema
+2023-04-20 06:01:00,905 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for wema
+2023-04-20 06:01:01,014 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for wema
+2023-04-20 06:01:01,333 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for wema
+2023-04-20 06:01:47,234 INFO scheduler Scheduled Job Start: gch_custom.gch_task.cron for wema
+2023-04-20 06:01:47,492 INFO scheduler Scheduled Job Complete: gch_custom.gch_task.cron for wema

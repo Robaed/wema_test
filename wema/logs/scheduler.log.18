@@ -1,0 +1,5 @@
+2023-04-20 11:38:45,519 INFO scheduler Scheduled Job Complete: gch_custom.gch_task.cron for wema
+2023-04-20 11:39:45,589 INFO scheduler Scheduled Job Start: gch_custom.gch_task.cron for wema
+2023-04-20 11:39:45,903 INFO scheduler Scheduled Job Complete: gch_custom.gch_task.cron for wema
+2023-04-20 11:40:46,040 INFO scheduler Scheduled Job Start: gch_custom.tasks.all for wema
+2023-04-20 11:40:46,326 INFO scheduler Scheduled Job Failed: gch_custom.tasks.all for wema

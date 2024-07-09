@@ -1,0 +1,263 @@
+{
+ "etype": "AttributeError",
+ "evalue": "AttributeError(\"'MariaDBDatabase' object has no attribute 'get_doc'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   39,
+   77,
+   97,
+   114,
+   105,
+   97,
+   68,
+   66,
+   68,
+   97,
+   116,
+   97,
+   98,
+   97,
+   115,
+   101,
+   39,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   32,
+   104,
+   97,
+   115,
+   32,
+   110,
+   111,
+   32,
+   97,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   32,
+   39,
+   103,
+   101,
+   116,
+   95,
+   100,
+   111,
+   99,
+   39,
+   34,
+   44,
+   41
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   65,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://wema:8000/api/method/gch_custom.services.rest.check_if_encounter_submitted' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "64": "",
+    "65": "\t\telif request.path.startswith(\"/api/\"):",
+    "66": "\t\t\tresponse = frappe.api.handle()",
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 66
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/redward/Des...yground/wema/wema/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "53": "\tif call == \"method\":",
+    "54": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "55": "\t\treturn frappe.handler.handle()",
+    "56": "",
+    "57": "\telif call == \"resource\":"
+   },
+   "lnum": 55
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'gch_custom.services.rest.check_if_encounter_submitted'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "36": "",
+    "37": "\tif cmd != \"login\":",
+    "38": "\t\tdata = execute_cmd(cmd)",
+    "39": "",
+    "40": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 38
+  },
+  {
+   "call": "(cmd='gch_custom.services.rest.check_if_encounter_submitted', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'patient_encounter': 'HLC-ENC-2023-00021', 'cmd...stom.services.rest.check_if_encounter_submitted'}",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>",
+    "method": "<function check_if_encounter_submitted>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "74": "\t\tis_valid_http_method(method)",
+    "75": "",
+    "76": "\treturn frappe.call(method, **frappe.form_dict)",
+    "77": "",
+    "78": ""
+   },
+   "lnum": 76
+  },
+  {
+   "call": "(fn=<function check_if_encounter_submitted>, *args=(), **kwargs={'cmd': 'gch_custom.services.rest.check_if_encounter_submitted', 'patient_encounter': 'HLC-ENC-2023-00021'})",
+   "dump": {
+    "args": "()",
+    "fn": "<function check_if_encounter_submitted>",
+    "newargs": "{'cmd': 'gch_custom.services.rest.check_if_encounter_submitted', 'patient_encounter': 'HLC-ENC-2023-00021'}"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1471": "\tnewargs = get_newargs(fn, kwargs)",
+    "1472": "",
+    "1473": "\treturn fn(*args, **newargs)",
+    "1474": "",
+    "1475": ""
+   },
+   "lnum": 1473
+  },
+  {
+   "call": "(**args={'cmd': 'gch_custom.services.rest.check_if_encounter_submitted', 'patient_encounter': 'HLC-ENC-2023-00021'})",
+   "dump": {
+    "args": "{'cmd': 'gch_custom.services.rest.check_if_encounter_submitted', 'patient_encounter': 'HLC-ENC-2023-00021'}",
+    "enc_doc": "undefined",
+    "frappe. db": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "frappe.db.get_doc": "undefined",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/gch_custom/gch_custom/services/rest.py",
+   "func": "check_if_encounter_submitted",
+   "lines": {
+    "4238": "def check_if_encounter_submitted(**args):",
+    "4239": "",
+    "4240": "    enc_doc = frappe.db.get_doc(\"Patient Encounter\", args[\"patient_encounter\"])",
+    "4241": "    if enc_doc.docstatus == 1:",
+    "4242": "\t    return True"
+   },
+   "lnum": 4240
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, name='get_doc')",
+   "dump": {
+    "builtin getattr": "<built-in function getattr>",
+    "name": "'get_doc'",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. _get_current_object": "<bound method LocalProxy._get_current_object of ...atabase.mariadb.database.MariaDBDatabase object>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/env/lib/python3.8/site-packages/werkzeug/local.py",
+   "func": "__getattr__",
+   "lines": {
+    "346": "        if name == \"__members__\":",
+    "347": "            return dir(self._get_current_object())",
+    "348": "        return getattr(self._get_current_object(), name)",
+    "349": "",
+    "350": "    def __setitem__(self, key, value):"
+   },
+   "lnum": 348
+  }
+ ],
+ "locals": {
+  "name": "get_doc",
+  "self": "<frappe.database.mariadb.database.MariaDBDatabase object>"
+ },
+ "pyver": "Python 3.8.10: /home/redward/Desktop/playground/wema/wema/env/bin/python (prefix: /home/redward/Desktop/playground/wema/wema/env)",
+ "timestamp": "2023-05-24 09:03:04.697123",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/app.py\", line 66, in application\n    response = frappe.api.handle()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py\", line 55, in handle\n    return frappe.handler.handle()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py\", line 38, in handle\n    data = execute_cmd(cmd)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py\", line 76, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py\", line 1473, in call\n    return fn(*args, **newargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/gch_custom/gch_custom/services/rest.py\", line 4240, in check_if_encounter_submitted\n    enc_doc = frappe.db.get_doc(\"Patient Encounter\", args[\"patient_encounter\"])\n  File \"/home/redward/Desktop/playground/wema/wema/env/lib/python3.8/site-packages/werkzeug/local.py\", line 348, in __getattr__\n    return getattr(self._get_current_object(), name)\nAttributeError: 'MariaDBDatabase' object has no attribute 'get_doc'\n"
+}

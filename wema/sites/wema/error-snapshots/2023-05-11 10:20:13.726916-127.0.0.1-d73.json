@@ -1,0 +1,404 @@
+{
+ "etype": "AttributeError",
+ "evalue": "AttributeError(\"'super' object has no attribute 'validate'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   39,
+   115,
+   117,
+   112,
+   101,
+   114,
+   39,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   32,
+   104,
+   97,
+   115,
+   32,
+   110,
+   111,
+   32,
+   97,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   32,
+   39,
+   118,
+   97,
+   108,
+   105,
+   100,
+   97,
+   116,
+   101,
+   39,
+   34,
+   44,
+   41
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   65,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://wema:8000/api/method/frappe.desk.form.save.savedocs' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "64": "",
+    "65": "\t\telif request.path.startswith(\"/api/\"):",
+    "66": "\t\t\tresponse = frappe.api.handle()",
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 66
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/redward/Des...yground/wema/wema/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "53": "\tif call == \"method\":",
+    "54": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "55": "\t\treturn frappe.handler.handle()",
+    "56": "",
+    "57": "\telif call == \"resource\":"
+   },
+   "lnum": 55
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'frappe.desk.form.save.savedocs'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "36": "",
+    "37": "\tif cmd != \"login\":",
+    "38": "\t\tdata = execute_cmd(cmd)",
+    "39": "",
+    "40": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 38
+  },
+  {
+   "call": "(cmd='frappe.desk.form.save.savedocs', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'doc': '{\"docstatus\":0,\"doctype\":\"Patient Encou... 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}",
+    "global frappe": "<module 'frappe' from '/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py'>",
+    "method": "<function savedocs>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "74": "\t\tis_valid_http_method(method)",
+    "75": "",
+    "76": "\treturn frappe.call(method, **frappe.form_dict)",
+    "77": "",
+    "78": ""
+   },
+   "lnum": 76
+  },
+  {
+   "call": "(fn=<function savedocs>, *args=(), **kwargs={'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs', 'doc': '{\"docstatus\":0,\"doctype\":\"Patient Encounter\",\"na...ent_status\":\"\",\"clinic\":\"Outpatient Clinic - WC\"}'})",
+   "dump": {
+    "args": "()",
+    "fn": "<function savedocs>",
+    "newargs": "{'action': 'Save', 'doc': '{\"docstatus\":0,\"doctype\":\"Patient Encounter\",\"na...ent_status\":\"\",\"clinic\":\"Outpatient Clinic - WC\"}'}"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1471": "\tnewargs = get_newargs(fn, kwargs)",
+    "1472": "",
+    "1473": "\treturn fn(*args, **newargs)",
+    "1474": "",
+    "1475": ""
+   },
+   "lnum": 1473
+  },
+  {
+   "call": "(doc=<GCHPatientEncounter: HLC-ENC-2023-00012>, action='Save')",
+   "dump": {
+    "doc": "<GCHPatientEncounter: HLC-ENC-2023-00012>",
+    "doc. save": "<bound method Document.save of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/desk/form/save.py",
+   "func": "savedocs",
+   "lines": {
+    "22": "\t\tdoc.submit()",
+    "23": "\telse:",
+    "24": "\t\tdoc.save()",
+    "25": "",
+    "26": "\t# update recent documents"
+   },
+   "lnum": 24
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "kwargs": "{}",
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>",
+    "self. _save": "<bound method Document._save of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "save",
+   "lines": {
+    "310": "\tdef save(self, *args, **kwargs):",
+    "311": "\t\t\"\"\"Wrapper for _save\"\"\"",
+    "312": "\t\treturn self._save(*args, **kwargs)",
+    "313": "",
+    "314": "\tdef _save(self, ignore_permissions=None, ignore_version=None):"
+   },
+   "lnum": 312
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, ignore_permissions=None, ignore_version=None)",
+   "dump": {
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>",
+    "self. insert": "<bound method Document.insert of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "_save",
+   "lines": {
+    "332": "",
+    "333": "\t\tif self.get(\"__islocal\") or not self.get(\"name\"):",
+    "334": "\t\t\treturn self.insert()",
+    "335": "",
+    "336": "\t\tself.check_permission(\"write\", \"save\")"
+   },
+   "lnum": 334
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, ignore_permissions=None, ignore_links=None, ignore_if_duplicate=False, ignore_mandatory=None, set_name=None, set_child_names=True)",
+   "dump": {
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>",
+    "self. run_before_save_methods": "<bound method Document.run_before_save_methods of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "insert",
+   "lines": {
+    "261": "",
+    "262": "\t\tself.flags.in_insert = True",
+    "263": "\t\tself.run_before_save_methods()",
+    "264": "\t\tself._validate()",
+    "265": "\t\tself.set_docstatus()"
+   },
+   "lnum": 263
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>)",
+   "dump": {
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>",
+    "self. run_method": "<bound method Document.run_method of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "run_before_save_methods",
+   "lines": {
+    "1052": "",
+    "1053": "\t\tif self._action == \"save\":",
+    "1054": "\t\t\tself.run_method(\"validate\")",
+    "1055": "\t\t\tself.run_method(\"before_save\")",
+    "1056": "\t\telif self._action == \"submit\":"
+   },
+   "lnum": 1054
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, method='validate', *args=(), **kwargs={})",
+   "dump": {
+    "Document. hook": "<function Document.hook>",
+    "args": "()",
+    "fn": "<function Document.run_method.<locals>.fn>",
+    "global Document": "<class 'frappe.model.document.Document'>",
+    "kwargs": "{}",
+    "out": "undefined",
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "run_method",
+   "lines": {
+    "941": "",
+    "942": "\t\tfn.__name__ = str(method)",
+    "943": "\t\tout = Document.hook(fn)(self, *args, **kwargs)",
+    "944": "",
+    "945": "\t\tself.run_notifications(method)"
+   },
+   "lnum": 943
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "composed": "<function Document.hook.<locals>.compose.<locals>.runner>",
+    "kwargs": "{}",
+    "method": "'validate'",
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "composer",
+   "lines": {
+    "1262": "",
+    "1263": "\t\t\tcomposed = compose(f, *hooks)",
+    "1264": "\t\t\treturn composed(self, method, *args, **kwargs)",
+    "1265": "",
+    "1266": "\t\treturn composer"
+   },
+   "lnum": 1264
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, method='validate', *args=(), **kwargs={})",
+   "dump": {
+    "add_to_return_value": "<function Document.hook.<locals>.add_to_return_value>",
+    "args": "()",
+    "fn": "<function Document.run_method.<locals>.fn>",
+    "kwargs": "{}",
+    "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "runner",
+   "lines": {
+    "1244": "\t\tdef compose(fn, *hooks):",
+    "1245": "\t\t\tdef runner(self, method, *args, **kwargs):",
+    "1246": "\t\t\t\tadd_to_return_value(self, fn(self, *args, **kwargs))",
+    "1247": "\t\t\t\tfor f in hooks:",
+    "1248": "\t\t\t\t\tadd_to_return_value(self, f(self, method, *args, **kwargs))"
+   },
+   "lnum": 1246
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "kwargs": "{}",
+    "method_object": "<bound method GCHPatientEncounter.validate of <GCHPatientEncounter: HLC-ENC-2023-00012>>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py",
+   "func": "fn",
+   "lines": {
+    "938": "\t\t\t# If method found in __dict__, expect it to be callable",
+    "939": "\t\t\tif method in self.__dict__ or callable(method_object):",
+    "940": "\t\t\t\treturn method_object(*args, **kwargs)",
+    "941": "",
+    "942": "\t\tfn.__name__ = str(method)"
+   },
+   "lnum": 940
+  },
+  {
+   "call": "(self=<GCHPatientEncounter: HLC-ENC-2023-00012>)",
+   "dump": {
+    ").validate": "undefined",
+    "builtin super": "<class 'super'>"
+   },
+   "file": "/home/redward/Desktop/playground/wema/wema/apps/gch_custom/gch_custom/overrides/patient_encounter.py",
+   "func": "validate",
+   "lines": {
+    "54": "            queue_doc = frappe.get_doc(queue_record)",
+    "55": "            queue_doc.insert()",
+    "56": "        super().validate()",
+    "57": "",
+    "58": "    def after_insert(self):"
+   },
+   "lnum": 56
+  }
+ ],
+ "locals": {
+  "__class__": "<class 'gch_custom.overrides.patient_encounter.GCHPatientEncounter'>",
+  "patient": "Wema F First",
+  "patient_in_queue": "(('Q-0000001',),)",
+  "queue_doc": "<Queue: Q-0000001>",
+  "queue_group": "QG-00010",
+  "receptionist_qg": "QG-00010",
+  "self": "<GCHPatientEncounter: HLC-ENC-2023-00012>"
+ },
+ "pyver": "Python 3.8.10: /home/redward/Desktop/playground/wema/wema/env/bin/python (prefix: /home/redward/Desktop/playground/wema/wema/env)",
+ "timestamp": "2023-05-11 10:20:13.727052",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/app.py\", line 66, in application\n    response = frappe.api.handle()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/api.py\", line 55, in handle\n    return frappe.handler.handle()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py\", line 38, in handle\n    data = execute_cmd(cmd)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/handler.py\", line 76, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/__init__.py\", line 1473, in call\n    return fn(*args, **newargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/desk/form/save.py\", line 24, in savedocs\n    doc.save()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 312, in save\n    return self._save(*args, **kwargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 334, in _save\n    return self.insert()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 263, in insert\n    self.run_before_save_methods()\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 1054, in run_before_save_methods\n    self.run_method(\"validate\")\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 943, in run_method\n    out = Document.hook(fn)(self, *args, **kwargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 1264, in composer\n    return composed(self, method, *args, **kwargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 1246, in runner\n    add_to_return_value(self, fn(self, *args, **kwargs))\n  File \"/home/redward/Desktop/playground/wema/wema/apps/frappe/frappe/model/document.py\", line 940, in fn\n    return method_object(*args, **kwargs)\n  File \"/home/redward/Desktop/playground/wema/wema/apps/gch_custom/gch_custom/overrides/patient_encounter.py\", line 56, in validate\n    super().validate()\nAttributeError: 'super' object has no attribute 'validate'\n"
+}

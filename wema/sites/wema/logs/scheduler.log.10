@@ -1,0 +1,10 @@
+2023-05-02 17:48:35,700 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for wema
+2023-05-02 17:48:35,970 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for wema
+2023-05-02 17:48:36,054 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for wema
+2023-05-02 17:48:36,333 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for wema
+2023-05-02 17:48:36,415 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for wema
+2023-05-02 17:48:36,605 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for wema
+2023-05-02 17:49:33,219 INFO scheduler Scheduled Job Start: gch_custom.gch_task.cron for wema
+2023-05-02 17:49:33,506 INFO scheduler Scheduled Job Complete: gch_custom.gch_task.cron for wema
+2023-05-02 17:50:33,557 INFO scheduler Scheduled Job Start: gch_custom.gch_task.cron for wema
+2023-05-02 17:50:33,844 INFO scheduler Scheduled Job Complete: gch_custom.gch_task.cron for wema
